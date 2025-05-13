@@ -1,0 +1,63 @@
+@use "styles/reset.min";
+@use "styles/variables" as cssVars;
+
+* {
+  font-family: "Markazi Text", "Karla", serif;
+}
+
+body {
+  color: cssVars.$textColor;
+  background: cssVars.$backgroundColor;
+}
+
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header
+header {
+  h1, p {
+    font-family: "Markazi Text";
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 64pt;
+  }
+  p {
+    font-weight: 400;
+    font-size: 40pt;
+  }
+}
+
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header#article_header
+section header {
+  h1, p {
+    font-family: "Karla";
+  }
+  h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20pt;
+  }
+  p {
+    font-weight: 800;
+    font-size: 16pt;
+  }
+}
+
+article header {
+  h1, p, .highlight {
+    font-family: "Karla";
+  }
+  h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18pt;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16pt;
+    color: cssVars.$primary2;
+  }
+  .highlight {
+    font-weight: 500;
+    font-size: 16pt;
+    color: cssVars.$primary2;
+  }
+}

@@ -1,10 +1,13 @@
-import './App.css';
+import './App.scss';
+import { Header, Main, Footer } from 'components';
 
 function App() {
   return (
-    <div className="App">
-      HELLO THERE
-    </div>
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
   );
 }
 
