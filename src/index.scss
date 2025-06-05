@@ -10,24 +10,24 @@ body {
   background: cssVars.$backgroundColor;
 }
 
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header
-header {
-  h1, p {
-    font-family: "Markazi Text";
-  }
-  h1 {
-    font-weight: 500;
-    font-size: 64pt;
-  }
-  p {
-    font-weight: 400;
-    font-size: 40pt;
-  }
+button {
+  background-color: cssVars.$primary1;
+  padding: .4rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: .7rem;
+  font-family: 'Karla';
+  color: cssVars.$highlight4;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
 }
 
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header#article_header
 section header {
-  h1, p {
+  h1,
+  p {
     font-family: "Karla";
   }
   h1 {
@@ -42,7 +42,9 @@ section header {
 }
 
 article header {
-  h1, p, .highlight {
+  h1,
+  p,
+  .highlight {
     font-family: "Karla";
   }
   h1 {

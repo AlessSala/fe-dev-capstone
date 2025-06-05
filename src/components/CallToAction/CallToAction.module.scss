@@ -1,0 +1,50 @@
+@use "styles/variables" as cssVars;
+@use "styles/mixins" as mixins;
+
+.callToAction {
+  background-color: cssVars.$primary2;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+  gap: 2em;
+}
+
+.ctaContent {
+  display: flex;
+  flex-direction: column;
+  @include mixins.on-greater-devices() {
+    flex-direction: row;
+  }
+  gap: 2rem;
+  justify-content: space-between;
+  max-width: 70vw;
+  width: 100%;
+  div {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-family: "Markazi Text";
+      color: cssVars.$primary1;
+      font-weight: 500;
+      font-size: 3rem;
+      margin-bottom: -0.5rem;
+    }
+    h2 {
+      font-family: "Markazi Text";
+      color: cssVars.$highlight3;
+      font-size: 2rem;
+    }
+    p {
+      color: cssVars.$highlight3;
+      font-size: 1.3rem;
+      margin: .7rem 0 .7rem 0;
+    }
+  }
+  img {
+    border-radius: .7rem;
+    margin-bottom: -3rem;
+    min-width: 280px;
+    object-fit: cover;
+  }
+}
