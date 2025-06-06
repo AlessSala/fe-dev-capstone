@@ -1,0 +1,55 @@
+@use "styles/variables" as cssVars;
+@use "styles/mixins" as mixins;
+
+.mobileNavToggle {
+  padding: 0.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  user-select: none;
+  cursor: pointer;
+  @include mixins.on-greater-devices() {
+    display: none;
+  }
+}
+
+nav {
+  display: none;
+  @include mixins.on-greater-devices() {
+    display: unset;
+  }
+  > ul {
+    display: flex;
+    gap: 1rem;
+    li > a {
+      color: cssVars.$textColor;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: inherit;
+      font-family: "Karla", serif;
+    }
+  }
+}
+
+@include mixins.on-mobile() {
+  .mobileNavActive {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    background-color: cssVars.$highlight3;
+    z-index: 100;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    padding: 1rem;
+    > ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.5rem;
+      // align-items: center;
+      justify-content: center;
+      li > a {
+        font-size: 2rem;
+      }
+    }
+  }
+}

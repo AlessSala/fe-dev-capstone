@@ -1,7 +1,9 @@
+import CallToAction from "components/CallToAction/CallToAction";
+
 const Main = () => {
   return (
     <main>
-      Main
+      <CallToAction />
     </main>
   )
 }

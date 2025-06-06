@@ -1,3 +1,7 @@
 @mixin on-greater-devices() {
   @media (min-width: 769px) { @content; }
 }
+
+@mixin on-mobile() {
+  @media (max-width: 768px) { @content; }
+}
