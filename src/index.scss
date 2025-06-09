@@ -10,6 +10,12 @@ body {
   background: cssVars.$backgroundColor;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 button {
   background-color: cssVars.$primary1;
   padding: .4rem 1rem;

@@ -1,11 +1,16 @@
 import './App.scss';
-import { Header, Main, Footer } from 'components';
+import { Routes, Route } from 'react-router-dom';
+import { Header, Footer } from 'components';
+import { HomePage, BookingPage } from 'pages';
 
 function App() {
   return (
     <>
       <Header />
-      <Main />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/booking" element={<BookingPage />} />
+      </Routes>
       <Footer />
     </>
   );

@@ -1,5 +1,6 @@
 import styles from "./CallToAction.module.scss";
 import restauranfood from "assets/restauranfood.jpg";
+import { Link } from "react-router-dom";
 
 export default function CallToAction() {
   return (
@@ -11,11 +12,11 @@ export default function CallToAction() {
           <p>
             We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
           </p>
-          <a href="/booking">
+          <Link to="/booking">
             <button class="reserve-btn btn">
               Reserve a table
             </button>
-          </a>
+          </Link>
         </div>
         <img
           src={restauranfood}

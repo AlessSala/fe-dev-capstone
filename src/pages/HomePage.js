@@ -1,6 +1,6 @@
 import CallToAction from "components/CallToAction/CallToAction";
 
-const Main = () => {
+const HomePage = () => {
   return (
     <main>
       <CallToAction />
@@ -8,4 +8,4 @@ const Main = () => {
   )
 }
 
-export default Main;
+export default HomePage;
