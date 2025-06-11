@@ -2,7 +2,7 @@
 @use "styles/mixins" as mixins;
 
 .mobileNavToggle {
-  padding: 0.5rem;
+  padding: .5rem;
   font-size: 3rem;
   font-weight: 800;
   user-select: none;
@@ -41,12 +41,15 @@ nav {
     top: 5rem;
     right: 0;
     padding: 1rem;
+    box-shadow: -.5rem .5rem .5rem cssVars.$highlight4;
     > ul {
       display: flex;
       flex-direction: column;
       row-gap: 1.5rem;
-      // align-items: center;
       justify-content: center;
+      li :hover {
+        background-color: cssVars.$secondary1;
+      }
       li > a {
         display: block;
         font-size: 2rem;

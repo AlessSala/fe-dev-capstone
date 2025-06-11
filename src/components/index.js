@@ -1,5 +1,7 @@
-import Nav from 'components/Nav/Nav';
-import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
+import Nav from './Nav/Nav';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+import CallToAction from './CallToAction/CallToAction';
+import Specials from './Specials/Specials';
 
-export { Nav, Header, Footer };
+export { Nav, Header, Footer, CallToAction, Specials };

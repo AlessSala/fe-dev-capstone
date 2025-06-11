@@ -1,0 +1,85 @@
+@use "styles/variables" as cssVars;
+@use "styles/mixins" as mixins;
+
+.specials {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.specialsTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 70vw;
+  width: 100%;
+  button {
+    padding: 1rem 1rem;
+  }
+  h1 {
+    color: cssVars.$highlight4;
+  }
+}
+
+.specialsContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  max-width: 70vw;
+  width: 100%;
+  article {
+    width: 20vw;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    background-color: cssVars.$highlight3;
+    border-radius: 0.7rem 0.7rem 0 0;
+    img {
+      border-radius: 0.7rem 0.7rem 0 0;
+      object-fit: cover;
+      width: 20vw;
+      min-width: 200px;
+    }
+    header,
+    footer,
+    p {
+      padding-inline: 1rem;
+    }
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        font-weight: 400;
+        font-size: 1.7rem;
+      }
+      span {
+        font-weight: 700;
+        font-family: "Karla";
+        color: cssVars.$secondary1;
+        text-wrap: nowrap;
+      }
+    }
+    p,
+    footer {
+      font-weight: 400;
+      font-size: 1rem;
+      font-family: "Karla";
+      color: cssVars.$primary2;
+    }
+    footer {
+      color: cssVars.$highlight4;
+      font-weight: 800;
+      padding: 0 1rem 1rem 1rem;
+      margin-top: auto;
+      user-select: none;
+      cursor: pointer;
+    }
+  }
+}

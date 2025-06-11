@@ -1,19 +1,20 @@
 import Nav from "components/Nav/Nav";
 import logo from "assets/logo.svg";
 import styles from "./Header.module.scss";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <div>
-        <a href="index.html">
+        <Link to="/">
           <img
             src={logo}
             alt="little lemon"
             width="148"
             height="40"
           />
-        </a>
+        </Link>
         <Nav />
       </div>
     </header>

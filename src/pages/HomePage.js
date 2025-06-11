@@ -1,9 +1,10 @@
-import CallToAction from "components/CallToAction/CallToAction";
+import { CallToAction, Specials } from "components";
 
 const HomePage = () => {
   return (
     <main>
       <CallToAction />
+      <Specials />
     </main>
   )
 }

@@ -11,10 +11,8 @@
 
 .ctaContent {
   display: flex;
-  flex-direction: column;
-  @include mixins.on-greater-devices() {
-    flex-direction: row;
-  }
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-between;
   max-width: 70vw;
@@ -24,10 +22,7 @@
     display: flex;
     flex-direction: column;
     h1 {
-      font-family: "Markazi Text";
       color: cssVars.$primary1;
-      font-weight: 500;
-      font-size: 3rem;
       margin-bottom: -0.5rem;
     }
     h2 {
@@ -43,7 +38,7 @@
   }
   img {
     border-radius: .7rem;
-    margin-bottom: -3rem;
+    margin: 0 -1rem -3rem;
     min-width: 280px;
     object-fit: cover;
   }
