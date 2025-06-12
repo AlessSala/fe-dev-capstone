@@ -1,0 +1,38 @@
+@use "styles/variables" as cssVars;
+@use "styles/mixins" as mixins;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: cssVars.$highlight3;
+}
+
+.ftrContent {
+  display: flex;
+  max-width: 70vw;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 4rem 0 1rem 0;
+  height: 10%;
+  h2 {
+    font-family: "Karla";
+    color: cssVars.$primary2;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    > li > a {
+      color: cssVars.$textColor;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: inherit;
+      font-family: "Karla", serif;
+    }
+  }
+}
