@@ -42,7 +42,9 @@ const customersData = [
 ];
 
 const customersSay = customersData.map((item) => {
-  return <article>
+  return <article
+    key={item.name}
+  >
     <img
       src={imgs[item.name]}
       alt={item.name}
@@ -53,9 +55,9 @@ const customersSay = customersData.map((item) => {
       <h1>
         {item.title}
       </h1>
-      <span>
-        {[...Array(item.rating)].map((e, i) => <>&#9733;</>)}
-      </span>
+      <div>
+        {[...Array(item.rating)].map((e, i) => <span key={i}>&#9733;</span>)}
+      </div>
     </header>
     <p>
       {item.reviewText}

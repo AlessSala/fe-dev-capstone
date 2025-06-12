@@ -8,7 +8,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route index element={<HomePage />} />
         <Route path="/booking" element={<BookingPage />} />
       </Routes>
       <Footer />

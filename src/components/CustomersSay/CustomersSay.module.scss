@@ -25,14 +25,14 @@
   max-width: 70vw;
   width: 100%;
   article {
-    width: 20vw;
+    width: 18rem;
     min-width: 200px;
     display: flex;
     flex-direction: column;
     background-color: cssVars.$secondary2;
     img {
       object-fit: cover;
-      width: 20vw;
+      width: 100%;
       height: auto;
       aspect-ratio: 1 / 1;
       min-width: 200px;
@@ -56,7 +56,6 @@
         font-weight: 700;
         font-family: "Karla";
         color: cssVars.$secondary1;
-        text-wrap: nowrap;
         letter-spacing: 0.1rem;
       }
     }

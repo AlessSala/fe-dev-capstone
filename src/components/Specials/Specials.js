@@ -37,7 +37,9 @@ const specialsData = [
 ];
 
 const specials = specialsData.map((item) => {
-  return <article>
+  return <article
+    key={item.name}
+  >
     <img
       src={imgs[item.name]}
       alt={item.name}

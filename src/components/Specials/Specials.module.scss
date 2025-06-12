@@ -35,7 +35,7 @@
   max-width: 70vw;
   width: 100%;
   article {
-    width: 20vw;
+    width: 18rem;
     min-width: 200px;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,9 @@
     img {
       border-radius: 0.7rem 0.7rem 0 0;
       object-fit: cover;
-      width: 20vw;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1.5 / 1;
       min-width: 200px;
     }
     header,

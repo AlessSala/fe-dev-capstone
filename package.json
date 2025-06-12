@@ -1,6 +1,7 @@
 {
   "name": "fe-dev-capstone",
   "version": "0.1.0",
+  "homepage": "https://AlessSala.github.io/fe-dev-capstone",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "10.4.0",
@@ -15,12 +16,15 @@
   },
   "devDependencies": {
     "eslint-plugin-jest": "28.13.0",
+    "gh-pages": "6.3.0",
     "sass": "1.86.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "lint": "npx eslint src/**/*.{js,jsx,es6}",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "export PUBLIC_URL='/fe-dev-capstone' && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
