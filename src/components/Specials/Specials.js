@@ -1,7 +1,7 @@
 import styles from "./Specials.module.scss";
-import bruschetta from "assets/bruschetta.jpg";
-import greekSalad from "assets/greek-salad.jpg";
-import lemonDessert from "assets/lemon-dessert.jpg";
+import bruschetta from "assets/specials/bruschetta.jpg";
+import greekSalad from "assets/specials/greek-salad.jpg";
+import lemonDessert from "assets/specials/lemon-dessert.jpg";
 
 const imgs = {
   bruschetta,
@@ -40,7 +40,7 @@ const specials = specialsData.map((item) => {
   return <article>
     <img
       src={imgs[item.name]}
-      alt="little lemon"
+      alt={item.name}
       width="200"
       height="175"
     />
