@@ -4,5 +4,6 @@ import Footer from './Footer/Footer';
 import CallToAction from './CallToAction/CallToAction';
 import Specials from './Specials/Specials';
 import CustomersSay from './CustomersSay/CustomersSay';
+import AboutUs from './AboutUs/AboutUs';
 
-export { Nav, Header, Footer, CallToAction, Specials, CustomersSay };
+export { Nav, Header, Footer, CallToAction, Specials, CustomersSay, AboutUs };

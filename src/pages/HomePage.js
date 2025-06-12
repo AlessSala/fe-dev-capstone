@@ -1,4 +1,4 @@
-import { CallToAction, Specials, CustomersSay } from "components";
+import { CallToAction, Specials, CustomersSay, AboutUs } from "components";
 
 const HomePage = () => {
   return (
@@ -6,6 +6,7 @@ const HomePage = () => {
       <CallToAction />
       <Specials />
       <CustomersSay />
+      <AboutUs />
     </main>
   )
 }
