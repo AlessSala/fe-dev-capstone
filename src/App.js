@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="/booking" element={<BookingPage />} />
+        <Route path="/confirmation" element={<HomePage />}></Route>
       </Routes>
       <Footer />
     </>
