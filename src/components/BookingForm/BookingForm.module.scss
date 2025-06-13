@@ -1,0 +1,73 @@
+@use "styles/variables" as cssVars;
+
+// Variables for easy customization
+$border-radius: 8px;
+
+.bookingForm {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1rem 0 1rem 0;
+  gap: 2em;
+}
+
+.bookingFormContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+  max-width: 70vw;
+  width: 100%;
+  border-radius: $border-radius;
+  background-color: cssVars.$highlight3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+
+  // Style labels
+  label {
+    font-family: "Karla";
+    display: block;
+    font-weight: 600;
+    color: cssVars.$textColor;
+  }
+
+  // Style text and date inputs
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  select {
+    font-family: "Karla";
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+
+    option {
+      font-family: "Karla";
+    }
+
+    &:focus {
+      outline: none;
+      border-color: cssVars.$primary2;
+      box-shadow: 0 0 8px rgba(cssVars.$primary2, 0.3);
+    }
+
+    &:hover {
+      border-color: lighten(cssVars.$highlight4, 10%);
+    }
+  }
+
+  // Style the submit button
+  input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+  }
+}
