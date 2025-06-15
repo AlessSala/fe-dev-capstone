@@ -1,4 +1,4 @@
 import BookingPage from "./BookingPage";
 import HomePage from "./HomePage";
-
-export { BookingPage, HomePage };
+import ConfirmationPage from "pages/ConfirmationPage/ConfirmationPage";
+export { BookingPage, HomePage, ConfirmationPage };

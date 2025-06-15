@@ -1,7 +1,7 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import { Header, Footer } from 'components';
-import { HomePage, BookingPage } from 'pages';
+import { HomePage, BookingPage, ConfirmationPage } from 'pages';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="/booking" element={<BookingPage />} />
-        <Route path="/confirmation" element={<HomePage />}></Route>
+        <Route path="/confirmation" element={<ConfirmationPage />}></Route>
       </Routes>
       <Footer />
     </>

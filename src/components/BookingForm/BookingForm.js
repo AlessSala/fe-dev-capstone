@@ -13,7 +13,7 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
     lastName: "",
     contactNumber: "",
     date: currDate,
-    time: "00:00",
+    time: availableTimes[0],
     guests: 1,
     occasion: "None"
   });
@@ -33,10 +33,11 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
   };
 
   const onDateChange = async (event) => {
-    const { name, value } = event.target;
+    const { value } = event.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [name]: value
+      date: value,
+      time: availableTimes.includes(prevFormData.time) ? prevFormData.time : availableTimes[0]
     }));
     updateTimes({ type: UPDATE_AVAIL_TIMES, payload: value });
   };
