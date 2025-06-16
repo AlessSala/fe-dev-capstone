@@ -35,8 +35,11 @@
   max-width: 70vw;
   width: 100%;
   article {
-    width: 18rem;
-    min-width: 200px;
+    @include mixins.on-greater-devices() {
+      flex-basis: 30%;
+    }
+    flex-basis: 100%;
+    flex-grow: 2;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -48,7 +51,6 @@
       width: 100%;
       height: auto;
       aspect-ratio: 1.5 / 1;
-      min-width: 200px;
     }
     header,
     footer,

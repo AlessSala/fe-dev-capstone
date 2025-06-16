@@ -1,4 +1,5 @@
 @use "styles/variables" as cssVars;
+@use "styles/mixins" as mixins;
 
 // Variables for easy customization
 $border-radius: 8px;
@@ -24,44 +25,49 @@ $border-radius: 8px;
   width: 100%;
   border-radius: $border-radius;
   background-color: cssVars.$highlight3;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
   margin-bottom: 2rem;
 
-  // Style labels
-  label {
-    font-family: "Karla";
-    display: block;
-    font-weight: 600;
-    color: cssVars.$textColor;
-  }
+  div {
+    @include mixins.on-greater-devices() {
+      flex-basis: 45%;
+    }
+    flex-basis: 100%;
 
-  // Style text and date inputs
-  input[type="text"],
-  input[type="date"],
-  input[type="number"],
-  select {
-    font-family: "Karla";
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: $border-radius;
-    font-size: 1em;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-
-    option {
+    label {
       font-family: "Karla";
+      display: block;
+      font-weight: 600;
+      color: cssVars.$textColor;
+      margin-bottom: .5rem;
     }
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select {
+      font-family: "Karla";
+      width: 100%;
+      padding: .6rem .8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: $border-radius;
+      font-size: 1em;
+      transition: all .3s ease;
+      box-sizing: border-box;
 
-    &:focus {
-      outline: none;
-      border-color: cssVars.$primary2;
-      box-shadow: 0 0 8px rgba(cssVars.$primary2, 0.3);
-    }
+      option {
+        font-family: "Karla";
+      }
 
-    &:hover {
-      border-color: lighten(cssVars.$highlight4, 10%);
+      &:focus {
+        outline: none;
+        border-color: cssVars.$primary2;
+        box-shadow: 0 0 8px rgba(cssVars.$primary2, .3);
+      }
+
+      &:hover {
+        border-color: lighten(cssVars.$highlight4, 10%);
+      }
     }
   }
 

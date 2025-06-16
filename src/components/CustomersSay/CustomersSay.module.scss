@@ -25,8 +25,11 @@
   max-width: 70vw;
   width: 100%;
   article {
-    width: 18rem;
-    min-width: 200px;
+    @include mixins.on-greater-devices() {
+      flex-basis: 30%;
+    }
+    flex-basis: 100%;
+    flex-grow: 2;
     display: flex;
     flex-direction: column;
     background-color: cssVars.$secondary2;
@@ -35,7 +38,6 @@
       width: 100%;
       height: auto;
       aspect-ratio: 1 / 1;
-      min-width: 200px;
     }
     header,
     footer,
@@ -47,7 +49,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      gap: 0.5rem;
+      gap: .5rem;
       h1 {
         font-weight: 400;
         font-size: 1.7rem;
@@ -56,7 +58,7 @@
         font-weight: 700;
         font-family: "Karla";
         color: cssVars.$secondary1;
-        letter-spacing: 0.1rem;
+        letter-spacing: .1rem;
       }
     }
     p,

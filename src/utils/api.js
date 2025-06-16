@@ -14,10 +14,10 @@ export function fetchAPI(date) {
 
   let random = seededRandom(seed);
   for (let i = 17; i <= 23; i++) {
-    if (random() < 0.5) {
+    if (random() < .5) {
       result.push(i + ":00");
     }
-    if (random() < 0.5) {
+    if (random() < .5) {
       result.push(i + ":30");
     }
   }

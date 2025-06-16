@@ -25,25 +25,25 @@ main {
 button,
 .button {
   background-color: cssVars.$primary1;
-  padding: 0.4rem 1rem;
+  padding: .4rem 1rem;
   border: none;
   outline: none;
-  border-radius: 0.7rem;
+  border-radius: .7rem;
   font-family: "Karla";
   color: cssVars.$highlight4;
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  transition: background-color .3s ease, box-shadow .2s ease;
 
   &:hover {
     background-color: darken(cssVars.$primary1, 10%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
   }
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(cssVars.$primary1, 0.3);
+    box-shadow: 0 0 0 3px rgba(cssVars.$primary1, .3);
   }
 }
