@@ -1,6 +1,6 @@
 import styles from "./BookingForm.module.scss";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { submitAPI } from "utils/api";
 import { UPDATE_AVAIL_TIMES } from "utils/dispatches";
 
@@ -82,7 +82,7 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
             <option>Anniversary</option>
           </select>
         </div>
-        <input class="button" type="submit" value="Make Your reservation" aria-label="Make Your reservation" />
+        <input className="button" type="submit" value="Make Your reservation" aria-label="Make Your reservation" />
       </form>
     </div>
   );

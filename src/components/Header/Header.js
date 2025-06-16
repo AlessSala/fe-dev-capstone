@@ -1,7 +1,7 @@
 import Nav from "components/Nav/Nav";
 import logo from "assets/logo.svg";
 import styles from "./Header.module.scss";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 export default function Header() {
   return (

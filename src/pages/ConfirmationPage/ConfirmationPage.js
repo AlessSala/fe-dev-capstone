@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router";
 import styles from "./ConfirmationPage.module.scss";
 
 const ConfirmationPage = () => {

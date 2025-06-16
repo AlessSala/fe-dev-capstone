@@ -66,11 +66,14 @@ const specials = specialsData.map((item) => {
 export default function Specials() {
   return (
     <>
-      <div className={styles.specials}>
+      <div
+        className={styles.specials}
+        data-testid="Specials"
+      >
         <div className={styles.specialsTitle}>
           <h1>This weeks specials!</h1>
           <a href="#menu">
-            <button class="btn">
+            <button className="btn">
               Online Menu
             </button>
           </a>

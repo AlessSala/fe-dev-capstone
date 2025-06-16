@@ -68,7 +68,10 @@ const customersSay = customersData.map((item) => {
 export default function CustomersSay() {
   return (
     <>
-      <div className={styles.customersSay}>
+      <div
+        className={styles.customersSay}
+        data-testid="CustomersSay"
+      >
         <h1>Testimonials</h1>
         <div className={styles.customersSayContent}>
           {customersSay}

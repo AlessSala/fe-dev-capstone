@@ -1,10 +1,13 @@
 import styles from "./CallToAction.module.scss";
 import serving from "assets/serving.jpg";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 export default function CallToAction() {
   return (
-    <div className={styles.callToAction}>
+    <div
+      className={styles.callToAction}
+      data-testid="CallToAction"
+    >
       <div className={styles.ctaContent}>
         <div>
           <h1>Little Lemon</h1>

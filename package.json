@@ -25,7 +25,7 @@
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "export PUBLIC_URL='/fe-dev-capstone' && gh-pages -d build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --testURL http://localhost/fe-dev-capstone",
     "eject": "react-scripts eject"
   },
   "repository": {

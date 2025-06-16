@@ -1,5 +1,5 @@
 import './App.scss';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router';
 import { Header, Footer } from 'components';
 import { HomePage, BookingPage, ConfirmationPage } from 'pages';
 

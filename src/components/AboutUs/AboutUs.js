@@ -3,7 +3,10 @@ import aboutUs from "assets/aboutUs.png";
 
 export default function AboutUs() {
   return (
-    <div className={styles.aboutUs}>
+    <div
+      className={styles.aboutUs}
+      data-testid="AboutUs"
+    >
       <div className={styles.abuContent}>
         <div>
           <h1>Little Lemon</h1>
